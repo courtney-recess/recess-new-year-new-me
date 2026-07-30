@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Year, New Me x CVS Media Exchange | Recess</title>
+<meta name="description" content="New Year, New Me x CVS Media Exchange: put brands' products in the hands of committed gym-goers at gyms and studios near CVS stores during the biggest habit-reset moment of the year. Category-exclusive. Measured and attributed.">
+<!-- Built on the Recess Design System (Style Guide tokens v5.6.0), inlined so the page is self-contained. -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  :root{
+    --color-aqua:#E4002B; --color-sea-green:#B80022; --color-forest:#E4002B; --color-orange:#ff8900;
+    --color-navy:#0a0f1a; --color-navy-light:#0d1525; --color-navy-deep:#060b15; --color-navy-muted:#111827;
+    --color-grey-200:#DBE1E8; --color-grey-500:#5F6E81;
+    --color-primary:var(--color-aqua); --color-primary-hover:var(--color-sea-green); --color-accent-green:#E4002B;
+    --text-white:rgba(255,255,255,1); --text-white-85:rgba(255,255,255,.85); --text-white-60:rgba(255,255,255,.60);
+    --text-white-55:rgba(255,255,255,.55); --text-white-25:rgba(255,255,255,.25);
+    --font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    --fw-medium:500; --fw-semibold:600; --fw-bold:700; --fw-extrabold:800; --fw-black:900;
+    --font-size-hero:clamp(2.5rem,5vw + 1rem,4.5rem); --font-size-hero-sub:clamp(1.125rem,1.5vw + .5rem,1.5rem);
+    --font-size-section-title:clamp(1.75rem,3vw + .5rem,2.75rem); --font-size-section-label:clamp(.6875rem,.8vw,.8125rem);
+    --font-size-body:clamp(.9375rem,1vw + .25rem,1.0625rem); --font-size-body-small:clamp(.8125rem,.9vw + .1rem,.9375rem);
+    --font-size-caption:.75rem;
+    --lh-tight:1.1; --lh-snug:1.3; --lh-normal:1.5; --lh-relaxed:1.7;
+    --ls-tight:-.02em; --ls-wide:.05em; --ls-widest:.12em;
+    --spacing-section-y:100px; --spacing-section-x:48px; --spacing-card-padding:32px;
+    --spacing-gap:20px; --spacing-gap-md:16px; --spacing-gap-sm:6px;
+    --max-width-content:1160px;
+    --radius-card:16px; --radius-button:10px; --radius-badge:8px; --radius-pill:100px;
+    --border-subtle:1px solid rgba(255,255,255,.06); --border-light:1px solid rgba(255,255,255,.10);
+    --shadow-cta-glow:0 0 24px rgba(228,0,43,.25); --shadow-cta-glow-hover:0 0 32px rgba(228,0,43,.40);
+    --shadow-card:0 4px 24px rgba(0,0,0,.08);
+    --transition-fast:.2s ease; --transition-base:.3s ease; --transition-button:200ms ease;
+    --hover-lift:translateY(-3px);
+    --glass-blur:blur(12px); --glass-bg-dark:rgba(10,15,26,.75);
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font-family);font-weight:400;font-size:var(--font-size-body);line-height:var(--lh-normal);
+    background:var(--color-navy);color:var(--text-white-85);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{margin:0;line-height:var(--lh-tight);letter-spacing:var(--ls-tight);color:var(--text-white)}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .ico{width:1em;height:1em;display:inline-block;vertical-align:-.14em;fill:currentColor;flex:none}
+
+  .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 32px;
+    font-family:var(--font-family);font-size:var(--font-size-body);font-weight:var(--fw-semibold);color:var(--text-white);
+    background:var(--color-primary);border:none;border-radius:var(--radius-button);cursor:pointer;text-decoration:none;
+    transition:background var(--transition-button),box-shadow var(--transition-button),transform var(--transition-button);
+    box-shadow:var(--shadow-cta-glow)}
+  .btn-primary:hover{background:var(--color-primary-hover);box-shadow:var(--shadow-cta-glow-hover);transform:var(--hover-lift)}
+  .btn-primary.arrow::after{content:"→"}
+  .btn-ghost{display:inline-flex;align-items:center;justify-content:center;padding:14px 32px;font-family:var(--font-family);
+    font-size:var(--font-size-body);font-weight:var(--fw-semibold);color:var(--text-white);background:transparent;
+    border:1px solid rgba(255,255,255,.25);border-radius:var(--radius-button);text-decoration:none;transition:border-color var(--transition-button),background var(--transition-button),transform var(--transition-button)}
+  .btn-ghost:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.05);transform:var(--hover-lift)}
+  .badge{display:inline-flex;align-items:center;gap:.4em;padding:6px 14px;font-size:var(--font-size-caption);
+    font-weight:var(--fw-semibold);letter-spacing:var(--ls-wide);text-transform:uppercase;border-radius:var(--radius-badge);
+    background:rgba(228,0,43,.10);color:var(--color-aqua);border:1px solid rgba(228,0,43,.20)}
+  .card{background:var(--color-navy-light);border:var(--border-subtle);border-radius:var(--radius-card);
+    padding:var(--spacing-card-padding);transition:border-color var(--transition-base),transform var(--transition-base),box-shadow var(--transition-base)}
+  .card:hover{border-color:rgba(255,255,255,.12);transform:var(--hover-lift);box-shadow:var(--shadow-card)}
+  .section__label{font-size:var(--font-size-section-label);font-weight:var(--fw-semibold);letter-spacing:var(--ls-widest);
+    text-transform:uppercase;color:var(--color-aqua)}
+
+  .wrap{max-width:var(--max-width-content);margin:0 auto;padding:0 var(--spacing-section-x)}
+  .band{padding:var(--spacing-section-y) 0}
+  .center{text-align:center}
+  .muted{color:var(--text-white-55)}
+  .lead{font-size:clamp(24px,3.6vw,40px);font-weight:var(--fw-bold);max-width:22ch;margin:14px auto 0;line-height:var(--lh-snug);color:var(--text-white)}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:1000;background:var(--glass-bg-dark);backdrop-filter:var(--glass-blur);
+    -webkit-backdrop-filter:var(--glass-blur);border-bottom:var(--border-subtle)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:var(--max-width-content);margin:0 auto;padding:0 var(--spacing-section-x)}
+  .logo{display:flex;align-items:center;text-decoration:none}
+  .logo img{height:26px;width:auto;display:block}
+  .nav-links{display:flex;gap:28px;align-items:center;list-style:none}
+  .nav-links a{color:var(--text-white-60);text-decoration:none;font-size:var(--font-size-body-small);font-weight:var(--fw-medium);transition:color var(--transition-fast)}
+  .nav-links a:hover{color:var(--text-white)}
+  .nav-links a.nav-cta{padding:9px 18px;border-radius:var(--radius-button);background:var(--color-aqua);color:#ffffff;font-weight:var(--fw-bold)}
+  @media(max-width:860px){.nav-links a:not(.nav-cta){display:none}}
+
+  /* HERO — split text | image */
+  .hero{position:relative;overflow:hidden;padding:56px 0 90px}
+  .hero-glow{position:absolute;inset:0;z-index:0;pointer-events:none;background:
+    radial-gradient(50% 60% at 12% 6%,rgba(228,0,43,.16),transparent 60%),
+    radial-gradient(55% 60% at 92% 30%,rgba(228,0,43,.20),transparent 60%)}
+  .hero-split{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+  .hero-copy h1{font-size:var(--font-size-hero);font-weight:var(--fw-extrabold);max-width:14ch;text-wrap:balance}
+  .hero-copy h1 .grad{background:linear-gradient(120deg,var(--color-aqua),var(--color-forest));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero-copy p.rigor{font-size:clamp(1.05rem,1.5vw,1.35rem);font-weight:var(--fw-bold);color:var(--color-aqua);margin:16px 0 0;letter-spacing:.005em}
+  .hero-copy p.sub{font-size:var(--font-size-hero-sub);color:var(--text-white-60);line-height:var(--lh-relaxed);max-width:52ch;margin:18px 0 0}
+  .hero-copy .cta-row{display:flex;gap:var(--spacing-gap-md);flex-wrap:wrap;margin:32px 0 0}
+  .hero-copy .badge{margin-bottom:18px}
+  .hero-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+  .hero-photo .fg{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(228,0,43,.25),inset 0 -70px 110px rgba(6,11,21,.45)}
+  .hero-photo .tag{position:absolute;left:16px;bottom:16px;z-index:2;font-size:12px;font-weight:var(--fw-semibold);letter-spacing:.03em;padding:6px 12px;border-radius:var(--radius-pill);background:rgba(0,0,0,.55);backdrop-filter:blur(6px);color:#fff}
+  @media(max-width:880px){.hero-split{grid-template-columns:1fr;gap:36px}.hero-photo{aspect-ratio:16/11;max-width:560px;margin:0 auto}.hero-copy{text-align:center}.hero-copy h1,.hero-copy p.sub{margin-left:auto;margin-right:auto}.hero-copy .cta-row{justify-content:center}}
+
+  /* category exclusive */
+  .excl{background:linear-gradient(180deg,rgba(228,0,43,.07),transparent 90%);border-top:var(--border-light);border-bottom:var(--border-light);padding:48px 0}
+  .excl .wrap{display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:left}
+  .excl .lock{font-size:28px;color:var(--color-aqua)}
+  .excl .txt{max-width:640px}
+  .excl h3{font-size:clamp(20px,2.6vw,28px);font-weight:var(--fw-extrabold)}
+  .excl h3 .c{color:var(--color-aqua)}
+  .excl p{color:var(--text-white-55);font-size:var(--font-size-body-small);margin-top:8px}
+  @media(max-width:620px){.excl .wrap{text-align:center}}
+
+  /* the moment + stats */
+  .moment{background:var(--color-navy-muted);border-top:var(--border-subtle);border-bottom:var(--border-subtle)}
+  .moment p.big{font-size:clamp(17px,2vw,21px);color:var(--text-white-60);max-width:64ch;margin:22px auto 0;line-height:var(--lh-relaxed)}
+  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--spacing-gap);margin-top:52px}
+  .stat-card{background:rgba(255,255,255,.03);border:var(--border-subtle);border-radius:var(--radius-card);padding:28px 26px;text-align:left}
+  .stat-card .ic{font-size:26px;color:var(--color-aqua)}
+  .stat-card h4{font-size:19px;margin:14px 0 8px;font-weight:var(--fw-bold);color:var(--text-white)}
+  .stat-card p{font-size:var(--font-size-body-small);color:var(--text-white-55);margin:0;line-height:var(--lh-relaxed)}
+  @media(max-width:760px){.stat-row{grid-template-columns:1fr}}
+
+  /* program */
+  .program{padding:100px 0;background:radial-gradient(120% 90% at 100% 0%,rgba(228,0,43,.10),transparent 55%),radial-gradient(100% 80% at 0% 100%,rgba(228,0,43,.08),transparent 55%)}
+  .program .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  @media(max-width:900px){.program .grid{grid-template-columns:1fr;gap:40px}}
+  .season-tag{display:inline-flex;align-items:center;gap:.5em;font-weight:var(--fw-semibold);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:var(--radius-pill);background:rgba(228,0,43,.13);color:var(--color-forest);border:1px solid rgba(228,0,43,.3)}
+  .program h2{font-size:clamp(28px,4.2vw,46px);font-weight:var(--fw-extrabold);margin:20px 0 0}
+  .program h2 .accent{color:var(--color-forest)}
+  .program .when-line{font-weight:var(--fw-semibold);font-size:14px;margin-top:14px;color:var(--color-forest)}
+  .program .desc{color:var(--text-white-60);margin-top:18px;font-size:var(--font-size-body);max-width:52ch;line-height:var(--lh-relaxed)}
+  .feat{list-style:none;margin:28px 0 0;display:grid;gap:14px}
+  .feat li{display:flex;gap:14px;align-items:flex-start;font-size:var(--font-size-body);color:var(--text-white-85)}
+  .feat li .tick{flex:0 0 auto;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:var(--fw-bold);margin-top:2px;background:rgba(228,0,43,.16);color:var(--color-forest)}
+  .feat li b{color:var(--text-white);font-weight:var(--fw-semibold)}
+  .visual{position:relative}
+  .photo-main{position:relative;border-radius:var(--radius-card);overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+  .photo-main img{width:100%;height:100%;object-fit:cover}
+  .photo-main .fg{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(228,0,43,.25),inset 0 -80px 120px rgba(6,11,21,.5)}
+  .photo-mini{position:absolute;width:44%;aspect-ratio:1/1;border-radius:14px;overflow:hidden;border:5px solid var(--color-navy);box-shadow:0 20px 50px rgba(0,0,0,.5);right:-18px;bottom:-26px}
+  .photo-mini img{width:100%;height:100%;object-fit:cover}
+  @media(max-width:900px){.photo-mini{width:40%}}
+
+  /* run it your way */
+  .ways{background:var(--color-navy-muted);border-top:var(--border-subtle);border-bottom:var(--border-subtle)}
+  .ways .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--spacing-gap);margin-top:52px}
+  .waycard{position:relative;overflow:hidden;text-align:left}
+  .waycard .rail{position:absolute;left:0;top:0;bottom:0;width:4px}
+  .waycard.national .rail{background:linear-gradient(var(--color-aqua),var(--color-forest))}
+  .waycard.walmart .rail{background:#0071DC}
+  .waycard.dg .rail{background:#FFC220}
+  .waycard.cvs .rail{background:#E4002B}
+  .waycard .chip{display:inline-block;font-size:11px;font-weight:var(--fw-semibold);letter-spacing:.04em;padding:4px 10px;border-radius:var(--radius-pill);background:rgba(255,255,255,.06);color:var(--text-white-60);margin-bottom:14px}
+  .waycard .num{font-size:14px;color:var(--text-white-25);font-weight:var(--fw-semibold)}
+  .waycard h3{font-size:20px;margin:8px 0 10px;font-weight:var(--fw-bold)}
+  .waycard p{font-size:var(--font-size-body-small);color:var(--text-white-55);margin:0;line-height:var(--lh-relaxed)}
+  @media(max-width:980px){.ways .cards{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.ways .cards{grid-template-columns:1fr}}
+
+  /* how it works */
+  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:52px;text-align:left}
+  .flow .step{padding:26px 22px;background:rgba(255,255,255,.03);border:var(--border-subtle);border-radius:var(--radius-card)}
+  .flow .step .n{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:var(--fw-extrabold);font-size:16px;background:var(--color-aqua);color:#ffffff;margin-bottom:16px}
+  .flow .step h4{font-size:16px;font-weight:var(--fw-bold);margin:0 0 8px;color:var(--text-white)}
+  .flow .step p{font-size:var(--font-size-body-small);color:var(--text-white-55);margin:0;line-height:var(--lh-relaxed)}
+  @media(max-width:1000px){.flow{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.flow{grid-template-columns:1fr}}
+
+  /* omnichannel / video reels */
+  .amp{background:var(--color-navy-deep);border-top:var(--border-subtle);border-bottom:var(--border-subtle)}
+  .reels{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:52px}
+  .reel{width:280px;border-radius:20px;overflow:hidden;background:#000;border:var(--border-light);box-shadow:0 24px 60px rgba(0,0,0,.5);position:relative}
+  .reel video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover;background:#000}
+  .reel .plt{position:absolute;top:12px;left:12px;z-index:3;font-size:11px;font-weight:var(--fw-bold);letter-spacing:.04em;padding:5px 11px;border-radius:var(--radius-pill);background:rgba(0,0,0,.6);backdrop-filter:blur(6px);color:#fff;display:flex;align-items:center;gap:.4em;pointer-events:none}
+  .amp .caption{max-width:60ch;margin:16px auto 0}
+  @media(max-width:980px){.reel{width:240px}}
+  @media(max-width:640px){.reel{width:100%;max-width:330px}}
+
+  /* proof gallery wall */
+  .mgrid{column-count:4;column-gap:12px;margin-top:44px}
+  .mgrid .m{break-inside:avoid;margin:0 0 12px;border-radius:12px;overflow:hidden;position:relative;background:var(--color-navy-light)}
+  .mgrid .m img{width:100%;display:block;transition:transform .6s ease}
+  .mgrid .m:hover img{transform:scale(1.05)}
+  .mgrid .m .tag{position:absolute;left:9px;bottom:9px;font-size:10.5px;font-weight:var(--fw-semibold);letter-spacing:.03em;padding:3px 9px;border-radius:var(--radius-pill);background:rgba(0,0,0,.6);backdrop-filter:blur(4px);color:#fff}
+  @media(max-width:1000px){.mgrid{column-count:3}}
+  @media(max-width:680px){.mgrid{column-count:2}}
+
+  /* final cta */
+  .final{position:relative;text-align:center;padding:118px 0;overflow:hidden;border-top:var(--border-light)}
+  .final-glow{position:absolute;inset:0;background:radial-gradient(50% 60% at 20% 0%,rgba(228,0,43,.20),transparent 60%),radial-gradient(50% 60% at 80% 10%,rgba(228,0,43,.18),transparent 60%)}
+  .final .wrap{position:relative;z-index:2}
+  .final h2{font-size:clamp(30px,5vw,56px);font-weight:var(--fw-extrabold);max-width:16ch;margin:0 auto 18px}
+  .final p{font-size:var(--font-size-hero-sub);color:var(--text-white-60);max-width:54ch;margin:0 auto 32px;line-height:var(--lh-relaxed)}
+
+  footer{border-top:var(--border-subtle);padding:40px 0;color:var(--text-white-25);font-size:var(--font-size-caption)}
+  .foot-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .foot-in img{height:22px;width:auto;opacity:.9}
+
+  .cobrand{gap:12px}
+  .cobrand .rlogo{height:24px;width:auto}
+  .cobrand .xsym{color:var(--text-white-25);font-size:18px;font-weight:400}
+  .cobrand .plogo{height:30px;width:auto;background:#fff;padding:5px 9px;border-radius:7px;display:block}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="5" y="10" width="14" height="10" rx="2"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M2.5 4h2l2 11h10l2-8H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 6.5"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="nav-in">
+    <a href="#top" class="logo cobrand"><img src="images/recess-logo.png" alt="Recess" class="rlogo"><span class="xsym">&times;</span><img src="images/cvs.svg" alt="CVS Media Exchange" class="plogo"></a>
+    <nav class="nav-links">
+      <a href="#moment">The moment</a>
+      <a href="#program">Gyms &amp; studios</a>
+      <a href="#amp">Amplification</a>
+      <a href="https://www.recess.is" target="_blank" rel="noopener" class="nav-cta">Learn More</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- HERO (split) -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="wrap hero-split">
+    <div class="hero-copy">
+      <span class="badge"><svg class="ico"><use href="#i-bolt"></use></svg> Recess &times; CVS Media Exchange</span>
+      <h1>Reach CVS shoppers in the moments that <span class="grad">drive purchase</span>.</h1>
+      <p class="rigor">Measured. Attributed. Repeatable.</p>
+      <p class="sub">New Year, New Me puts brands' products in CVS shoppers' hands at gyms and studios near CVS stores, driving trips and measurable sales back to the shelf. A natural fit for health, wellness, and personal-care brands built for the reset.</p>
+      <div class="cta-row">
+        <a href="mailto:hello@recess.is?subject=New%20Year%2C%20New%20Me%20with%20Recess" class="btn-primary arrow">Plan Your January Moment</a>
+        <a href="#program" class="btn-ghost">See the program</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/01.jpg" alt="A gym member with a product sample at an F45 studio">
+      <div class="fg"></div>
+      <span class="tag">F45 · Sampling in-studio</span>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY EXCLUSIVE -->
+<section class="excl">
+  <div class="wrap">
+    <div class="lock"><svg class="ico"><use href="#i-lock"></use></svg></div>
+    <div class="txt">
+      <h3>This is a <span class="c">category-exclusive</span> opportunity.</h3>
+      <p>Only one brand per category can own the moment. Claim yours and your competitors are locked out for the length of the program.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE MOMENT -->
+<a id="moment"></a>
+<section class="band moment center">
+  <div class="wrap">
+    <p class="section__label">Why January</p>
+    <h2 class="lead">No one is more open to something new than they are on January 1.</h2>
+    <p class="big">Coming out of the holidays, households reset. They rethink what they eat, drink, and buy, and they go actively hunting for products that fit the new version of themselves. Sampling in this window doesn't just earn a taste. It lands your product at the exact moment a routine is being rebuilt from scratch.</p>
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="ic"><svg class="ico"><use href="#i-cart"></use></svg></div>
+        <h4>Peak reset mindset</h4>
+        <p>You reach people the moment they're deciding what belongs in their new routine, and actively swapping old habits for new ones.</p>
+      </div>
+      <div class="stat-card">
+        <div class="ic"><svg class="ico"><use href="#i-users"></use></svg></div>
+        <h4>Committed, high-frequency</h4>
+        <p>Gym-goers who train multiple times a week: a captive, motivated audience that shows up again and again all month.</p>
+      </div>
+      <div class="stat-card">
+        <div class="ic"><svg class="ico"><use href="#i-camera"></use></svg></div>
+        <h4>A moment worth sharing</h4>
+        <p>Resolution energy turns a sample into content: check-ins, posts, and progress moments tied to your brand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<a id="program"></a>
+<section class="program">
+  <div class="wrap">
+    <div class="grid">
+      <div class="copy">
+        <span class="season-tag"><svg class="ico"><use href="#i-bolt"></use></svg> The Program</span>
+        <h2>New Year, New Me at <span class="accent">Gyms &amp; Fitness Studios</span></h2>
+        <div class="when-line">Running the first weeks of January</div>
+        <p class="desc">Samples distributed across our national network of gyms and boutique fitness studios near CVS locations, reaching committed members as they rebuild the new year's routine.</p>
+        <ul class="feat">
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span>Distributed across a <b>national network of gyms and boutique studios</b>, from F45, Orange Theory, and Burn Boot Camp to Crunch Fitness and beloved local gyms.</span></li>
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span>Lands during <b>peak New Year reset</b>, when people are actively rebuilding what they eat, drink, and buy.</span></li>
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span>Reaches <b>committed gym-goers who train multiple times a week</b>, a captive, motivated, high-repeat audience.</span></li>
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span>A high-dwell setting where trial feels earned and on-brand for a healthier routine.</span></li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="photo-main">
+          <img src="images/00.jpg" alt="Two gym members smiling with product samples">
+          <div class="fg"></div>
+        </div>
+        <div class="photo-mini">
+          <img src="images/06.jpg" alt="A member holding a sample at a wellness studio">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<a id="how"></a>
+<section class="band center">
+  <div class="wrap">
+    <p class="section__label">How it works</p>
+    <h2 class="lead">How the Recess network works</h2>
+    <p class="muted" style="max-width:62ch;margin:16px auto 0">Recess turns the year's biggest habit-reset moment into scalable, measurable media placements, driving targeted product trial and retail growth through five connected elements.</p>
+    <div class="flow">
+      <div class="step"><div class="n">1</div><h4>Fitness Venues</h4><p>A national network of gyms and boutique studios where committed members show up week after week in January.</p></div>
+      <div class="step"><div class="n">2</div><h4>Placements &amp; Targeting</h4><p>Each venue is a placement in a distributed media buy, targeted by studio type, audience, geography, and retailer proximity.</p></div>
+      <div class="step"><div class="n">3</div><h4>Product Trial</h4><p>Your product introduced through trusted teams in real-world moments, for authentic trial while routines are being rebuilt.</p></div>
+      <div class="step"><div class="n">4</div><h4>Omnichannel Amplification</h4><p>Social, email, and digital touchpoints extend reach and connect the on-site moment back to your retailer and brand destinations.</p></div>
+      <div class="step"><div class="n">5</div><h4>Retail Measurement</h4><p>Closed-loop measurement connects campaign engagement to retail performance, incremental sales, and brand growth.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OMNICHANNEL / VIDEO -->
+<a id="amp"></a>
+<section class="band amp center">
+  <div class="wrap">
+    <p class="section__label">Omnichannel amplification</p>
+    <h2 class="lead">The moment doesn't end at the gym.</h2>
+    <p class="muted caption" style="max-width:62ch">Every activation is amplified across social and email by the venues and our creators, turning a single sample into content that reaches thousands more, and connects the in-person moment back to your brand and retailer.</p>
+    <div class="reels">
+      <div class="reel">
+        <span class="plt"><svg class="ico"><use href="#i-play"></use></svg> Creator Reel</span>
+        <video controls playsinline preload="none" poster="videos/poster-1.jpg"><source src="videos/reel-1.mp4" type="video/mp4"></video>
+      </div>
+      <div class="reel">
+        <span class="plt"><svg class="ico"><use href="#i-play"></use></svg> Venue Story</span>
+        <video controls playsinline preload="none" poster="videos/poster-2.jpg"><source src="videos/reel-2.mp4" type="video/mp4"></video>
+      </div>
+      <div class="reel">
+        <span class="plt"><svg class="ico"><use href="#i-play"></use></svg> Event Recap</span>
+        <video controls playsinline preload="none" poster="videos/poster-3.jpg"><source src="videos/reel-3.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF GALLERY WALL -->
+<section class="band center">
+  <div class="wrap">
+    <p class="section__label">Real moments from the field</p>
+    <h2 class="lead">This is what showing up looks like.</h2>
+    <p class="muted" style="max-width:56ch;margin:16px auto 0">Real people, real samples, real routines, captured across our gym and fitness studio network.</p>
+    <div class="mgrid">
+      <div class="m"><img loading="lazy" src="images/02.jpg" alt="Sampling at Crunch Fitness"><span class="tag">Crunch Fitness</span></div>
+      <div class="m"><img loading="lazy" src="images/21.jpg" alt="Sampling at an F45 studio"><span class="tag">F45</span></div>
+      <div class="m"><img loading="lazy" src="images/07.jpg" alt="Sampling at TITLE Boxing Club"><span class="tag">TITLE Boxing</span></div>
+      <div class="m"><img loading="lazy" src="images/12.jpg" alt="Sampling at a gym"><span class="tag">Gym</span></div>
+      <div class="m"><img loading="lazy" src="images/04.jpg" alt="Sampling at a boutique studio"><span class="tag">Studio</span></div>
+      <div class="m"><img loading="lazy" src="images/03.jpg" alt="Sampling at an F45 studio"><span class="tag">F45</span></div>
+      <div class="m"><img loading="lazy" src="images/16.jpg" alt="Sampling at a gym"><span class="tag">Gym</span></div>
+      <div class="m"><img loading="lazy" src="images/09.jpg" alt="Sampling at a fitness studio"><span class="tag">Studio</span></div>
+      <div class="m"><img loading="lazy" src="images/13.jpg" alt="Sampling at an F45 studio"><span class="tag">F45</span></div>
+      <div class="m"><img loading="lazy" src="images/17.jpg" alt="Sampling at a gym"><span class="tag">Gym</span></div>
+      <div class="m"><img loading="lazy" src="images/05.jpg" alt="Sampling at a fitness studio"><span class="tag">Studio</span></div>
+      <div class="m"><img loading="lazy" src="images/08.jpg" alt="Sampling at a gym"><span class="tag">Gym</span></div>
+      <div class="m"><img loading="lazy" src="images/14.jpg" alt="Sampling at TITLE Boxing Club"><span class="tag">TITLE Boxing</span></div>
+      <div class="m"><img loading="lazy" src="images/18.jpg" alt="Sampling at a gym"><span class="tag">Gym</span></div>
+      <div class="m"><img loading="lazy" src="images/22.jpg" alt="Sampling at a studio"><span class="tag">Studio</span></div>
+      <div class="m"><img loading="lazy" src="images/19.jpg" alt="Sampling at a gym"><span class="tag">Gym</span></div>
+      <div class="m"><img loading="lazy" src="images/11.jpg" alt="Sampling at a studio"><span class="tag">Studio</span></div>
+      <div class="m"><img loading="lazy" src="images/20.jpg" alt="Sampling at a gym"><span class="tag">Gym</span></div>
+      <div class="m"><img loading="lazy" src="images/23.jpg" alt="Sampling at a studio"><span class="tag">Studio</span></div>
+      <div class="m"><img loading="lazy" src="images/10.jpg" alt="Sampling at a studio"><span class="tag">Studio</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<a id="talk"></a>
+<section class="final">
+  <div class="final-glow"></div>
+  <div class="wrap">
+    <p class="section__label">Let's build your CVS January</p>
+    <h2>Ready to drive CVS trips this New Year?</h2>
+    <p>We'll walk your team through the network, the January timing, and how to build a CVS-aligned footprint that drives measurable trips and sales. No commitment, just the full picture.</p>
+    <a href="mailto:hello@recess.is?subject=Plan%20Our%20New%20Year%20Moment%20with%20Recess" class="btn-primary arrow">Plan Your January Moment</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <span class="cobrand" style="display:flex;align-items:center;gap:12px"><img src="images/recess-logo.png" alt="Recess" style="height:22px"><span style="color:var(--text-white-25)">&times;</span><img src="images/cvs.svg" alt="CVS Media Exchange" style="height:26px;background:#fff;padding:4px 8px;border-radius:6px"></span>
+    <span>New Year, New Me &middot; Recess &times; CVS Media Exchange &middot; Category-exclusive</span>
+  </div>
+</footer>
+
+</body>
+</html>
