@@ -82,22 +82,22 @@
   @media(max-width:860px){.nav-links a:not(.nav-cta){display:none}}
 
   /* HERO — split text | image */
-  .hero{position:relative;overflow:hidden;padding:56px 0 90px}
+  .hero{position:relative;overflow:hidden;padding:40px 0 52px}
   .hero-glow{position:absolute;inset:0;z-index:0;pointer-events:none;background:
     radial-gradient(50% 60% at 12% 6%,rgba(31,187,166,.16),transparent 60%),
     radial-gradient(55% 60% at 92% 30%,rgba(20,185,214,.20),transparent 60%)}
   .hero-split{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
-  .hero-copy h1{font-size:var(--font-size-hero);font-weight:var(--fw-extrabold);max-width:14ch;text-wrap:balance}
+  .hero-copy h1{font-size:clamp(2rem,3.2vw + .55rem,3.1rem);font-weight:var(--fw-extrabold);max-width:15ch;text-wrap:balance}
   .hero-copy h1 .grad{background:linear-gradient(120deg,var(--color-aqua),var(--color-forest));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .hero-copy p.rigor{font-size:clamp(1.05rem,1.5vw,1.35rem);font-weight:var(--fw-bold);color:var(--color-aqua);margin:16px 0 0;letter-spacing:.005em}
-  .hero-copy p.sub{font-size:var(--font-size-hero-sub);color:var(--text-white-60);line-height:var(--lh-relaxed);max-width:52ch;margin:18px 0 0}
+  .hero-copy p.rigor{font-size:clamp(.95rem,1.1vw,1.15rem);font-weight:var(--fw-bold);color:var(--color-aqua);margin:12px 0 0;letter-spacing:.005em}
+  .hero-copy p.sub{font-size:clamp(.9rem,.4vw + .78rem,1rem);color:var(--text-white-60);line-height:1.55;max-width:46ch;margin:14px 0 0}
   .hero-copy .cta-row{display:flex;gap:var(--spacing-gap-md);flex-wrap:wrap;margin:32px 0 0}
   .hero-copy .badge{margin-bottom:18px}
-  .hero-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 80px rgba(0,0,0,.55)}
-  .hero-photo img,.hero-photo video{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block}
+  .hero-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:9/16;height:min(58vh,500px);width:auto;justify-self:center;margin:0 auto;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+  .hero-photo img,.hero-photo video{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
   .hero-photo .fg{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(20,185,214,.25),inset 0 -70px 110px rgba(6,11,21,.45)}
   .hero-photo .tag{position:absolute;left:16px;bottom:16px;z-index:2;font-size:12px;font-weight:var(--fw-semibold);letter-spacing:.03em;padding:6px 12px;border-radius:var(--radius-pill);background:rgba(0,0,0,.55);backdrop-filter:blur(6px);color:#fff}
-  @media(max-width:880px){.hero-split{grid-template-columns:1fr;gap:36px}.hero-photo{aspect-ratio:16/11;max-width:560px;margin:0 auto}.hero-copy{text-align:center}.hero-copy h1,.hero-copy p.sub{margin-left:auto;margin-right:auto}.hero-copy .cta-row{justify-content:center}}
+  @media(max-width:880px){.hero-split{grid-template-columns:1fr;gap:30px}.hero-photo{aspect-ratio:9/16;height:auto;max-height:60vh;width:auto;max-width:300px;margin:0 auto}.hero-copy{text-align:center}.hero-copy h1,.hero-copy p.sub{margin-left:auto;margin-right:auto}.hero-copy .cta-row{justify-content:center}}
 
   /* category exclusive */
   .excl{background:linear-gradient(180deg,rgba(20,185,214,.07),transparent 90%);border-top:var(--border-light);border-bottom:var(--border-light);padding:48px 0}
@@ -248,7 +248,7 @@
       <p class="rigor">Measured. Attributed. Repeatable.</p>
       <p class="sub">New Year, New Me is a category-exclusive partnership with the gyms and studios where the new year actually happens: a full media program spanning product sampling, email, organic social, and amplified media against these shoppers, measured all the way back to the shelf.</p>
       <div class="cta-row">
-        <a href="mailto:hello@recess.is?subject=New%20Year%2C%20New%20Me%20with%20Recess" class="btn-primary arrow">Plan Your January Moment</a>
+        <a href="#program" class="btn-primary">Win the New Year</a>
       </div>
     </div>
     <div class="hero-photo">
@@ -436,7 +436,7 @@
     <p class="section__label">Let's build your January</p>
     <h2>Ready to own your category this New Year?</h2>
     <p>We'll walk you through the network, the January timing, and how to build a footprint that fits your goals, nationally or through your retail media partners. No commitment, just the full picture.</p>
-    <a href="mailto:hello@recess.is?subject=Plan%20Our%20New%20Year%20Moment%20with%20Recess" class="btn-primary arrow">Plan Your January Moment</a>
+    <a href="#program" class="btn-primary">Win the New Year</a>
   </div>
 </section>
 
