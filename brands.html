@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>New Year, New Me Sampling with Recess</title>
-<meta name="description" content="Put your product in the hands of committed gym-goers during the biggest habit-reset moment of the year. Run it nationally or through the Recess Retail Network: Walmart Connect, Dollar General Media Network, and CVS Media Exchange.">
+<title>New Year, New Me with Recess</title>
+<meta name="description" content="New Year, New Me: a category-exclusive partnership with fitness studios, spanning product sampling, email, organic social, and amplified media against these shoppers and commerce audiences. Measured back to the shelf, nationally or syndicated across the Recess Retail Network.">
 <!-- Built on the Recess Design System (Style Guide tokens v5.6.0), inlined so the page is self-contained. -->
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
@@ -194,6 +194,17 @@
   footer{border-top:var(--border-subtle);padding:40px 0;color:var(--text-white-25);font-size:var(--font-size-caption)}
   .foot-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
   .foot-in img{height:22px;width:auto;opacity:.9}
+  /* amplification media-product section */
+  .amplify{background:var(--color-navy-muted);border-top:var(--border-subtle);border-bottom:var(--border-subtle)}
+  .amp4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--spacing-gap);margin-top:48px;text-align:left}
+  .a4{background:rgba(255,255,255,.03);border:var(--border-subtle);border-radius:var(--radius-card);padding:26px 22px}
+  .a4ic{font-size:24px;color:var(--color-aqua);margin-bottom:14px}
+  .a4 h4{font-size:16px;font-weight:var(--fw-bold);color:var(--text-white);margin:0 0 8px}
+  .a4 p{font-size:var(--font-size-body-small);color:var(--text-white-55);margin:0;line-height:var(--lh-relaxed)}
+  .amplify .syndicate{margin:40px auto 0;font-size:var(--font-size-body);color:var(--text-white-60);max-width:64ch}
+  .amplify .syndicate b{color:var(--text-white)}
+  @media(max-width:900px){.amp4{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.amp4{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -205,6 +216,10 @@
   <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
   <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M11 6l1-1a4 4 0 0 1 6 6l-1 1"/><path d="M13 18l-1 1a4 4 0 0 1-6-6l1-1"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 6.5"/></symbol>
 </svg>
 
@@ -214,7 +229,7 @@
     <nav class="nav-links">
       <a href="#moment">The moment</a>
       <a href="#program">Gyms &amp; studios</a>
-      <a href="#amp">Amplification</a>
+      <a href="#amplify">Amplification</a>
       <a href="#partners">Retail partners</a>
       <a href="https://www.recess.is" target="_blank" rel="noopener" class="nav-cta">Learn More</a>
     </nav>
@@ -231,7 +246,7 @@
       <span class="badge"><svg class="ico"><use href="#i-bolt"></use></svg> New Year, New Me</span>
       <h1>Reach consumers in the moments that <span class="grad">drive purchase</span>.</h1>
       <p class="rigor">Measured. Attributed. Repeatable.</p>
-      <p class="sub">New Year, New Me puts your product in the hands of committed gym-goers during the biggest habit-reset of the year, at the gyms and studios where the new routine gets built, and measures it all the way back to the shelf.</p>
+      <p class="sub">New Year, New Me is a category-exclusive partnership with the gyms and studios where the new year actually happens: a full media program spanning product sampling, email, organic social, and amplified media against these shoppers, measured all the way back to the shelf.</p>
       <div class="cta-row">
         <a href="mailto:hello@recess.is?subject=New%20Year%2C%20New%20Me%20with%20Recess" class="btn-primary arrow">Plan Your January Moment</a>
         <a href="#program" class="btn-ghost">See the program</a>
@@ -277,16 +292,16 @@
   <div class="wrap">
     <div class="grid">
       <div class="copy">
-        <span class="season-tag"><svg class="ico"><use href="#i-bolt"></use></svg> The Program</span>
-        <h2>New Year, New Me at <span class="accent">Gyms &amp; Fitness Studios</span></h2>
+        <span class="season-tag"><svg class="ico"><use href="#i-bolt"></use></svg> The partnership</span>
+        <h2>A partnership with the gyms &amp; studios where the <span class="accent">new year happens</span>.</h2>
         <div class="when-line">Running the first weeks of January</div>
-        <p class="desc">Samples distributed across our national network of gyms and boutique fitness studios, the places committed members show up, week after week, to build the new year's routine.</p>
+        <p class="desc">A category-exclusive partnership with a national network of gyms and boutique fitness studios (F45, Orange Theory, Burn Boot Camp, Crunch Fitness, and beloved local gyms). Every program spans four connected media products:</p>
         <ul class="feat">
-          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Category-exclusive</b>: one brand per category, per moment. Claim it and your competitors are locked out for the length of the program.</span></li>
-          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span>Distributed across a <b>national network of gyms and boutique studios</b>, from F45, Orange Theory, and Burn Boot Camp to Crunch Fitness and beloved local gyms.</span></li>
-          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span>Lands during <b>peak New Year reset</b>, when people are actively rebuilding what they eat, drink, and buy.</span></li>
-          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span>Reaches <b>committed gym-goers who train multiple times a week</b>, a captive, motivated, high-repeat audience.</span></li>
-          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span>A high-dwell setting where trial feels earned and on-brand for a healthier routine.</span></li>
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Category-exclusive</b>: one brand per category, per moment. Claim it and your competitors are locked out.</span></li>
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Product sampling</b>: your product placed directly in members' hands, in-studio.</span></li>
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Email</b>: the studios send your brand to their member lists.</span></li>
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Organic social</b>: venues create and post authentic content featuring your product.</span></li>
+          <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Amplified media</b>: paid media extends the moment to these shoppers and commerce audiences.</span></li>
         </ul>
       </div>
       <div class="visual">
@@ -302,18 +317,31 @@
   </div>
 </section>
 
+<!-- AMPLIFICATION (media product) -->
+<a id="amplify"></a>
+<section class="band amplify center">
+  <div class="wrap">
+    <p class="section__label">Amplification &middot; A media product</p>
+    <h2 class="lead">The activation becomes a retailer-driven media product.</h2>
+    <p class="muted" style="max-width:64ch;margin:16px auto 0">The on-site moment is just the start. Recess turns it into targeted, measurable media that follows your shopper from the studio to the shelf.</p>
+    <div class="amp4">
+      <div class="a4"><div class="a4ic"><svg class="ico"><use href="#i-pin"></use></svg></div><h4>Target physical locations</h4><p>Reach the gyms and studios where your shoppers already are.</p></div>
+      <div class="a4"><div class="a4ic"><svg class="ico"><use href="#i-target"></use></svg></div><h4>Target commerce audiences</h4><p>Extend the moment with amplified media against these shoppers and commerce audiences.</p></div>
+      <div class="a4"><div class="a4ic"><svg class="ico"><use href="#i-chart"></use></svg></div><h4>Measure via retailer data</h4><p>Closed-loop measurement through your retailer's first-party data.</p></div>
+      <div class="a4"><div class="a4ic"><svg class="ico"><use href="#i-link"></use></svg></div><h4>Integrated with retailers</h4><p>Plugged directly into your retail media partners.</p></div>
+    </div>
+    <p class="syndicate">Plan it nationally, then syndicate the program across key RMN partners: <b>Walmart Connect</b>, <b>Dollar General Media Network</b>, and <b>CVS Media Exchange</b>.</p>
+  </div>
+</section>
+
 <!-- OMNICHANNEL / VIDEO -->
-<a id="amp"></a>
+<a id="activations"></a>
 <section class="band amp center">
   <div class="wrap">
-    <p class="section__label">Omnichannel amplification</p>
-    <h2 class="lead">The moment doesn't end at the gym.</h2>
-    <p class="muted caption" style="max-width:62ch">Every activation is amplified across social and email by the venues, turning a single sample into content that reaches thousands more, and connects the in-person moment back to your brand and retailer.</p>
+    <p class="section__label">Real activations</p>
+    <h2 class="lead">See the moment in action.</h2>
+    <p class="muted caption" style="max-width:62ch">Real content from real activations, created and shared by the studios and their communities.</p>
     <div class="reels">
-      <div class="reel">
-        <span class="plt"><svg class="ico"><use href="#i-play"></use></svg> Creator Reel</span>
-        <video controls playsinline preload="none" poster="videos/poster-1.jpg"><source src="videos/reel-1.mp4" type="video/mp4"></video>
-      </div>
       <div class="reel">
         <span class="plt"><svg class="ico"><use href="#i-play"></use></svg> Venue Story</span>
         <video controls playsinline preload="none" poster="videos/poster-2.jpg"><source src="videos/reel-2.mp4" type="video/mp4"></video>
