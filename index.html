@@ -168,13 +168,13 @@
 
   /* omnichannel / video reels */
   .amp{background:var(--color-navy-deep);border-top:var(--border-subtle);border-bottom:var(--border-subtle)}
-  .reels{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:52px}
-  .reel{width:280px;border-radius:20px;overflow:hidden;background:#000;border:var(--border-light);box-shadow:0 24px 60px rgba(0,0,0,.5);position:relative}
+  .reels{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px}
+  .reel{border-radius:20px;overflow:hidden;background:#000;border:var(--border-light);box-shadow:0 24px 60px rgba(0,0,0,.5);position:relative}
   .reel video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover;background:#000}
   .reel .plt{position:absolute;top:12px;left:12px;z-index:3;font-size:11px;font-weight:var(--fw-bold);letter-spacing:.04em;padding:5px 11px;border-radius:var(--radius-pill);background:rgba(0,0,0,.6);backdrop-filter:blur(6px);color:#fff;display:flex;align-items:center;gap:.4em;pointer-events:none}
   .amp .caption{max-width:60ch;margin:16px auto 0}
-  @media(max-width:980px){.reel{width:240px}}
-  @media(max-width:640px){.reel{width:100%;max-width:330px}}
+  @media(max-width:900px){.reels{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.reels{grid-template-columns:1fr;max-width:320px;margin-left:auto;margin-right:auto}}
 
   /* proof gallery wall */
   .mgrid{column-count:4;column-gap:12px;margin-top:44px}
@@ -356,6 +356,9 @@
       </div>
       <div class="reel">
         <video controls playsinline preload="none" poster="videos/poster-4.jpg"><source src="videos/reel-4.mp4" type="video/mp4"></video>
+      </div>
+      <div class="reel">
+        <video controls playsinline preload="none" poster="videos/poster-5.jpg"><source src="videos/reel-5.mp4" type="video/mp4"></video>
       </div>
     </div>
   </div>
