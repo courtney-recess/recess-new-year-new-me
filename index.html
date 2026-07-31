@@ -113,9 +113,10 @@
   .moment{background:var(--color-navy-muted);border-top:var(--border-subtle);border-bottom:var(--border-subtle)}
   .moment p.big{font-size:clamp(17px,2vw,21px);color:var(--text-white-60);max-width:64ch;margin:22px auto 0;line-height:var(--lh-relaxed)}
   .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--spacing-gap);margin-top:52px}
-  .stat-card{background:rgba(255,255,255,.03);border:var(--border-subtle);border-radius:var(--radius-card);padding:28px 26px;text-align:left}
-  .stat-card .ic{font-size:26px;color:var(--color-aqua)}
-  .stat-card h4{font-size:19px;margin:14px 0 8px;font-weight:var(--fw-bold);color:var(--text-white)}
+  .stat-card{background:rgba(255,255,255,.03);border:var(--border-subtle);border-radius:var(--radius-card);overflow:hidden;text-align:left}
+  .stat-card .simg{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+  .stat-card .sbody{padding:22px 24px 24px}
+  .stat-card h4{font-size:19px;margin:0 0 8px;font-weight:var(--fw-bold);color:var(--text-white)}
   .stat-card p{font-size:var(--font-size-body-small);color:var(--text-white-55);margin:0;line-height:var(--lh-relaxed)}
   @media(max-width:760px){.stat-row{grid-template-columns:1fr}}
 
@@ -267,19 +268,25 @@
     <p class="muted" style="max-width:64ch;margin:16px auto 0">Coming out of the holidays, households reset. They rethink what they eat, drink, and buy, and they go actively hunting for products that fit the new version of themselves. Sampling in this window doesn't just earn a taste. It lands your product at the exact moment a routine is being rebuilt from scratch.</p>
     <div class="stat-row">
       <div class="stat-card">
-        <div class="ic"><svg class="ico"><use href="#i-cart"></use></svg></div>
-        <h4>Peak reset mindset</h4>
-        <p>You reach people the moment they're deciding what belongs in their new routine, and actively swapping old habits for new ones.</p>
+        <img class="simg" loading="lazy" src="images/pillar-1.jpg" alt="A gym-goer resetting their routine at a fitness studio">
+        <div class="sbody">
+          <h4>Peak reset mindset</h4>
+          <p>You reach people the moment they're deciding what belongs in their new routine, and actively swapping old habits for new ones.</p>
+        </div>
       </div>
       <div class="stat-card">
-        <div class="ic"><svg class="ico"><use href="#i-users"></use></svg></div>
-        <h4>Committed, high-frequency</h4>
-        <p>Gym-goers who train multiple times a week: a captive, motivated audience that shows up again and again all month.</p>
+        <img class="simg" loading="lazy" src="images/pillar-2.jpg" alt="A committed gym-goer training at a fitness center">
+        <div class="sbody">
+          <h4>Committed, high-frequency</h4>
+          <p>Gym-goers who train multiple times a week: a captive, motivated audience that shows up again and again all month.</p>
+        </div>
       </div>
       <div class="stat-card">
-        <div class="ic"><svg class="ico"><use href="#i-camera"></use></svg></div>
-        <h4>A moment worth sharing</h4>
-        <p>Resolution energy turns a sample into content: check-ins, posts, and progress moments tied to your brand.</p>
+        <img class="simg" loading="lazy" src="images/pillar-3.jpg" alt="An active member sharing a fitness moment">
+        <div class="sbody">
+          <h4>A moment worth sharing</h4>
+          <p>Resolution energy turns a sample into content: check-ins, posts, and progress moments tied to your brand.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -342,15 +349,12 @@
     <p class="muted caption" style="max-width:62ch">Real content from real activations, created and shared by the studios and their communities.</p>
     <div class="reels">
       <div class="reel">
-        <span class="plt"><svg class="ico"><use href="#i-play"></use></svg> Venue Story</span>
         <video controls playsinline preload="none" poster="videos/poster-2.jpg"><source src="videos/reel-2.mp4" type="video/mp4"></video>
       </div>
       <div class="reel">
-        <span class="plt"><svg class="ico"><use href="#i-play"></use></svg> Event Recap</span>
         <video controls playsinline preload="none" poster="videos/poster-3.jpg"><source src="videos/reel-3.mp4" type="video/mp4"></video>
       </div>
       <div class="reel">
-        <span class="plt"><svg class="ico"><use href="#i-play"></use></svg> Studio Reel</span>
         <video controls playsinline preload="none" poster="videos/poster-4.jpg"><source src="videos/reel-4.mp4" type="video/mp4"></video>
       </div>
     </div>
