@@ -343,11 +343,13 @@
   .lchip{background:#fff;border-radius:7px;padding:0 7px;height:26px;display:flex;align-items:center}
   .lchip img{height:14px;width:auto}
   .lchip.txt{background:rgba(255,255,255,.09);color:#fff;font-size:10px;font-weight:700;letter-spacing:.02em}
-  .tv{width:158px;aspect-ratio:16/10;border-radius:8px;border:4px solid #222b3a;background:#000;overflow:hidden;position:relative}
-  .tv::after{content:"";position:absolute;left:50%;bottom:-11px;transform:translateX(-50%);width:44px;height:8px;background:#222b3a;border-radius:0 0 5px 5px}
-  .tv img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
-  .kiosk{width:52px;aspect-ratio:9/17;border-radius:7px;border:4px solid #222b3a;background:#000;overflow:hidden;flex:none}
-  .kiosk img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+  .avis.ext{gap:18px}
+  .dev{display:flex;flex-direction:column;align-items:center;gap:9px}
+  .devlbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-aqua);font-weight:700}
+  .screen-tv{width:166px;aspect-ratio:16/10;border-radius:10px;border:6px solid #1c2534;background:#000;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+  .screen-ooh{width:60px;aspect-ratio:9/18;border-radius:10px;border:5px solid #1c2534;background:#000;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.5);flex:none}
+  .screen-tv img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+  .screen-ooh img{width:100%;height:100%;object-fit:cover;object-position:50% 16%}
   @media(max-width:900px){.amp3{grid-template-columns:1fr}}
 </style>
 <a id="amplify"></a>
@@ -390,7 +392,7 @@
       </div>
       <div class="acol">
         <div class="ahead"><div class="pnum">3</div><h3>Extend across channels</h3></div>
-        <div class="avis"><div class="tv"><img src="images/12.jpg" alt="CTV placement"></div><div class="kiosk"><img src="images/04.jpg" alt="Digital out-of-home"></div></div>
+        <div class="avis ext"><div class="dev"><div class="screen-tv"><img src="images/12.jpg" alt="CTV placement"></div><span class="devlbl">CTV</span></div><div class="dev"><div class="screen-ooh"><img src="images/18.jpg" alt="Digital out-of-home"></div><span class="devlbl">Digital OOH</span></div></div>
         <ul class="abul">
           <li>Repurpose top content for CTV campaigns.</li>
           <li>Digital out-of-home placements.</li>
