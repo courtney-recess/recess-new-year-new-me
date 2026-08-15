@@ -460,11 +460,10 @@
   .tg-chip{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px 10px}
   .tg-chip img{height:15px;width:auto;background:#fff;padding:3px 5px;border-radius:4px;flex:none}
   .tg-chip span{font-size:11px;color:var(--text-white-60);font-weight:600}
-  .md-row{display:flex;gap:7px}
-  .md-tile{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:9px 5px;text-align:center}
-  .md-tile b{display:block;font-size:15px;color:var(--color-aqua);font-weight:900;letter-spacing:-.02em}
-  .md-tile span{font-size:7.5px;color:var(--text-white-55);text-transform:uppercase;letter-spacing:.04em}
-  .md-bars{display:flex;align-items:flex-end;gap:5px;height:52px;margin-top:2px}
+  .md-stat{display:flex;align-items:baseline;justify-content:space-between;gap:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:8px 12px}
+  .md-stat b{font-size:17px;color:var(--color-aqua);font-weight:900;letter-spacing:-.02em}
+  .md-stat span{font-size:9px;color:var(--text-white-55);text-transform:uppercase;letter-spacing:.05em;text-align:right}
+  .md-bars{display:flex;align-items:flex-end;gap:5px;height:46px;margin-top:4px}
   .md-bars i{flex:1;background:linear-gradient(var(--color-aqua),var(--color-sea-green));opacity:.8;border-radius:2px 2px 0 0}
   @media(max-width:1000px){.proc{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:560px){.proc{grid-template-columns:1fr}}
@@ -499,11 +498,9 @@
       </div>
       <div class="pstep">
         <div class="pvis g-fill">
-          <div class="md-row">
-            <div class="md-tile"><b>$1.83</b><span>iROAS</span></div>
-            <div class="md-tile"><b>$2.9M</b><span>Incr. sales</span></div>
-            <div class="md-tile"><b>4.98%</b><span>Incr. lift</span></div>
-          </div>
+          <div class="md-stat"><b>$1.83</b><span>iROAS</span></div>
+          <div class="md-stat"><b>$2.9M</b><span>Incremental sales</span></div>
+          <div class="md-stat"><b>4.98%</b><span>Incremental lift</span></div>
           <div class="md-bars"><i style="height:38%"></i><i style="height:62%"></i><i style="height:50%"></i><i style="height:78%"></i><i style="height:66%"></i><i style="height:90%"></i><i style="height:72%"></i></div>
         </div>
         <div class="pbody"><div class="pnum">5</div><h4>Measure</h4><p>Closed-loop store-level sales lift and iROAS.</p></div>
