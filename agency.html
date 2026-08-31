@@ -247,7 +247,7 @@
       <span class="badge"><svg class="ico"><use href="#i-bolt"></use></svg> New Year, New Me</span>
       <h1>Bring your clients into the moments that <span class="grad">drive purchase</span>.</h1>
       <p class="rigor">Measured. Attributed. Repeatable.</p>
-      <p class="sub">Got a brand looking to activate experiential sampling in Q1? Let's talk. New Year, New Me is a category-exclusive partnership you can bring to your clients: their product in committed gym-goers' hands, spanning sampling, email, organic social, and amplified media, measured all the way back to the shelf.</p>
+      <p class="sub">Got a brand looking to activate experiential sampling in Q1? Let's talk. New Year, New Me is a category-exclusive partnership you can bring to your clients: their product in the gyms and studios where the new year happens, a full media program spanning sampling, email, organic social, and amplified media, measured all the way back to the shelf.</p>
       <div class="cta-row">
         <a href="#program" class="btn-primary">Win the New Year</a>
       </div>
@@ -301,7 +301,7 @@
         <span class="season-tag"><svg class="ico"><use href="#i-bolt"></use></svg> The partnership</span>
         <h2>A partnership with the gyms &amp; studios where the <span class="accent">new year happens</span>.</h2>
         <div class="when-line">Running the first weeks of January</div>
-        <p class="desc">A category-exclusive partnership with a national network of gyms and boutique fitness studios (F45, Orange Theory, Burn Boot Camp, Crunch Fitness, and beloved local gyms). Every program spans four connected media products:</p>
+        <p class="desc">A category-exclusive partnership with a national network of gyms and boutique fitness studios (F45, Orange Theory, Burn Boot Camp, Crunch Fitness, and beloved local gyms), the places your clients' future customers show up week after week. Every program spans four connected media products:</p>
         <ul class="feat">
           <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Category-exclusive</b>: one brand per category, per moment. Claim it and your competitors are locked out.</span></li>
           <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Product sampling</b>: your product handed over by the studio's own instructors, a recommendation from someone members already trust, not an interruption.</span></li>
@@ -323,20 +323,84 @@
   </div>
 </section>
 
-<!-- AMPLIFICATION (media product) -->
+<!-- AMPLIFICATION (audience amplification, 3-column) -->
+<style>
+  .amp3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;text-align:left}
+  .acol{background:var(--color-navy-light);border:var(--border-subtle);border-radius:var(--radius-card);padding:26px 24px;display:flex;flex-direction:column}
+  .ahead{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .ahead .pnum{margin:0;flex:none}
+  .ahead h3{font-size:19px;font-weight:800;line-height:1.15}
+  .avis{height:206px;border-radius:12px;background:radial-gradient(120% 100% at 50% 0%,#12203a,#0a0f1a);border:1px solid rgba(255,255,255,.08);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:10px;overflow:hidden;position:relative;padding:16px}
+  .ampintro{max-width:880px;margin:18px auto 0;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 24px;color:var(--text-white-60);font-size:15px;line-height:1.55}
+  .abul{list-style:none;display:grid;gap:10px}
+  .abul li{display:flex;gap:10px;font-size:13.5px;color:var(--text-white-60);line-height:1.45}
+  .abul li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--color-aqua);margin-top:6px}
+  .phone{width:96px;aspect-ratio:9/16;border-radius:14px;border:3px solid #222b3a;background:#000;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.5);flex:none}
+  .phone img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+  .phone.t1{transform:rotate(-4deg)} .phone.t2{transform:rotate(4deg);margin-left:-10px}
+  .arrow-r{color:var(--color-aqua);font-size:24px;font-weight:700;flex:none}
+  .lgrid{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;max-width:172px}
+  .lchip{background:#fff;border-radius:7px;padding:0 7px;height:26px;display:flex;align-items:center}
+  .lchip img{height:14px;width:auto}
+  .lchip.txt{background:rgba(255,255,255,.09);color:#fff;font-size:10px;font-weight:700;letter-spacing:.02em}
+  .avis.ext{gap:20px;align-items:flex-end}
+  .dev{display:flex;flex-direction:column;align-items:center;gap:10px}
+  .devlbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-aqua);font-weight:700}
+  .screen-tv{width:184px;aspect-ratio:16/10;border-radius:10px;border:6px solid #1c2534;background:#000;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+  .screen-ooh{width:68px;aspect-ratio:9/16;border-radius:11px;border:5px solid #1c2534;background:#000;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.5);flex:none}
+  .screen-tv img{width:100%;height:100%;object-fit:cover;object-position:50% 8%}
+  .screen-ooh img{width:100%;height:100%;object-fit:cover;object-position:50% 10%}
+  @media(max-width:900px){.amp3{grid-template-columns:1fr}}
+</style>
 <a id="amplify"></a>
 <section class="band amplify center">
   <div class="wrap">
-    <p class="section__label">Amplification &middot; A media product</p>
-    <h2 class="lead">The activation becomes a retailer-driven media product.</h2>
-    <p class="muted" style="max-width:64ch;margin:16px auto 0">The on-site moment is just the start. Recess turns it into targeted, measurable media that follows your shopper from the studio to the shelf.</p>
-    <div class="amp4">
-      <div class="a4"><div class="a4ic"><svg class="ico"><use href="#i-pin"></use></svg></div><h4>Target physical locations</h4><p>Mobility data indexes the venues that over-index on your retailer's shoppers, so we activate where they already are.</p></div>
-      <div class="a4"><div class="a4ic"><svg class="ico"><use href="#i-target"></use></svg></div><h4>Target commerce audiences</h4><p>Extend the moment with amplified media against these shoppers and commerce audiences.</p></div>
-      <div class="a4"><div class="a4ic"><svg class="ico"><use href="#i-chart"></use></svg></div><h4>Measure via retailer data</h4><p>Closed-loop measurement through your retailer's first-party data.</p></div>
-      <div class="a4"><div class="a4ic"><svg class="ico"><use href="#i-link"></use></svg></div><h4>Integrated with retailers</h4><p>Plugged directly into your retail media partners.</p></div>
+    <p class="section__label">Audience amplification</p>
+    <h2 class="lead">Every activation becomes a retailer-driven media product.</h2>
+    <p class="ampintro">Every activation generates authentic content from the venues and their communities. We select the highest-performing posts, put paid media behind them, and target retailer commerce audiences to drive sales.</p>
+    <div class="amp3">
+      <div class="acol">
+        <div class="ahead"><div class="pnum">1</div><h3>Venues create content</h3></div>
+        <div class="avis"><div class="phone t1"><img src="images/07.jpg" alt="Member post"></div><div class="phone t2"><img src="images/22.jpg" alt="Member post"></div></div>
+        <ul class="abul">
+          <li>Venues and their communities post about your product to their own audiences.</li>
+          <li>Each location generates authentic social, email, and digital content.</li>
+          <li>Vendor-tagged posts ("Available at DG", "Exclusively at Walmart").</li>
+          <li>Hundreds of individual posts per campaign, from trusted voices.</li>
+        </ul>
+      </div>
+      <div class="acol">
+        <div class="ahead"><div class="pnum">2</div><h3>Select top content, add paid media</h3></div>
+        <div class="avis">
+          <div class="phone"><img src="images/16.jpg" alt="Top post"></div>
+          <span class="arrow-r">&#8594;</span>
+          <div class="lgrid">
+            <span class="lchip"><img src="images/walmart.svg" alt="Walmart"></span>
+            <span class="lchip"><img src="images/dollar-general.svg" alt="Dollar General"></span>
+            <span class="lchip"><img src="images/cvs.svg" alt="CVS"></span>
+            <span class="lchip txt">Meta</span>
+            <span class="lchip txt">TikTok</span>
+            <span class="lchip txt">Target</span>
+          </div>
+        </div>
+        <ul class="abul">
+          <li>Identify the highest-performing organic posts from the campaign.</li>
+          <li>Put paid media behind top content, treating each location like an influencer.</li>
+          <li>Target retailer-specific commerce audiences.</li>
+          <li>Drive traffic and sales to retailer websites.</li>
+        </ul>
+      </div>
+      <div class="acol">
+        <div class="ahead"><div class="pnum">3</div><h3>Extend across channels</h3></div>
+        <div class="avis ext"><div class="dev"><div class="screen-tv"><img src="images/18.jpg" alt="CTV placement"></div><span class="devlbl">CTV</span></div><div class="dev"><div class="screen-ooh"><img src="images/18.jpg" alt="Digital out-of-home"></div><span class="devlbl">Digital OOH</span></div></div>
+        <ul class="abul">
+          <li>Repurpose top content for CTV campaigns.</li>
+          <li>Digital out-of-home placements.</li>
+          <li>Off-site display via The Trade Desk and open-web partners.</li>
+          <li>One activation feeds an entire media ecosystem.</li>
+        </ul>
+      </div>
     </div>
-    <p class="syndicate">Plan it nationally, then syndicate the program across key RMN partners: <b>Walmart Connect</b>, <b>Dollar General Media Network</b>, and <b>CVS Media Exchange</b>.</p>
   </div>
 </section>
 
@@ -381,18 +445,66 @@
 </section>
 
 <!-- HOW IT WORKS -->
+<style>
+  .proc{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:52px;text-align:left}
+  .pstep{background:var(--color-navy-light);border:var(--border-subtle);border-radius:var(--radius-card);overflow:hidden;display:flex;flex-direction:column}
+  .pvis{position:relative;aspect-ratio:4/5;overflow:hidden;background:#0d1525;border-bottom:var(--border-subtle)}
+  .pvis>img{width:100%;height:100%;object-fit:cover}
+  .pvis .avail{position:absolute;top:10px;right:10px;background:#0071DC;color:#fff;font-size:10.5px;font-weight:700;padding:5px 9px;border-radius:7px;box-shadow:0 4px 12px rgba(0,0,0,.45)}
+  .pbody{padding:18px 18px 22px}
+  .pnum{width:34px;height:34px;border-radius:9px;background:var(--color-aqua);color:#04252e;display:grid;place-items:center;font-weight:800;font-size:16px;margin-bottom:12px}
+  .pstep h4{font-size:19px;font-weight:800;margin-bottom:8px}
+  .pstep p{font-size:13.5px;color:var(--text-white-55);line-height:1.5}
+  .g-fill{display:flex;flex-direction:column;justify-content:center;gap:9px;padding:18px;background:radial-gradient(120% 100% at 50% 0%,#12203a,#0a0f1a)}
+  .tg-lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-aqua);font-weight:700;margin-bottom:2px}
+  .tg-chip{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px 10px}
+  .tg-chip img{height:15px;width:auto;background:#fff;padding:3px 5px;border-radius:4px;flex:none}
+  .tg-chip span{font-size:11px;color:var(--text-white-60);font-weight:600}
+  .md-stat{display:flex;align-items:baseline;justify-content:space-between;gap:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:8px 12px}
+  .md-stat b{font-size:17px;color:var(--color-aqua);font-weight:900;letter-spacing:-.02em}
+  .md-stat span{font-size:9px;color:var(--text-white-55);text-transform:uppercase;letter-spacing:.05em;text-align:right}
+  .md-bars{display:flex;align-items:flex-end;gap:5px;height:46px;margin-top:4px}
+  .md-bars i{flex:1;background:linear-gradient(var(--color-aqua),var(--color-sea-green));opacity:.8;border-radius:2px 2px 0 0}
+  @media(max-width:1000px){.proc{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.proc{grid-template-columns:1fr}}
+</style>
 <a id="how"></a>
 <section class="band center">
   <div class="wrap">
-    <p class="section__label">How it works</p>
-    <h2 class="lead">How the Recess network works</h2>
-    <p class="muted" style="max-width:62ch;margin:16px auto 0">Recess turns the year's biggest habit-reset moment into scalable, measurable media placements, driving targeted product trial and retail growth through five connected elements.</p>
-    <div class="flow">
-      <div class="step"><div class="n">1</div><h4>Fitness Venues</h4><p>A national network of gyms and boutique studios where committed members show up week after week in January.</p></div>
-      <div class="step"><div class="n">2</div><h4>Placements &amp; Targeting</h4><p>Each venue is a placement in a distributed media buy, indexed by mobility data to your retailer's shoppers, then refined by studio type, audience, and geography.</p></div>
-      <div class="step"><div class="n">3</div><h4>Product Trial</h4><p>Your product handed over by trusted studio instructors, a recommendation, not an interruption, for authentic trial while routines are being rebuilt.</p></div>
-      <div class="step"><div class="n">4</div><h4>Omnichannel Amplification</h4><p>Social, email, and digital touchpoints extend reach and connect the on-site moment back to your retailer and brand destinations.</p></div>
-      <div class="step"><div class="n">5</div><h4>Retail Measurement</h4><p>Closed-loop measurement connects campaign engagement to retail performance, incremental sales, and brand growth.</p></div>
+    <p class="section__label">The process</p>
+    <h2 class="lead">How it works</h2>
+    <p class="muted" style="max-width:62ch;margin:16px auto 0">One activation, five connected steps, from targeting the right shoppers to measured sales lift at the shelf.</p>
+    <div class="proc">
+      <div class="pstep">
+        <div class="pvis g-fill">
+          <div class="tg-lbl">Mobility index</div>
+          <div class="tg-chip"><img src="images/walmart.svg" alt="Walmart"><span>Walmart shoppers</span></div>
+          <div class="tg-chip"><img src="images/dollar-general.svg" alt="Dollar General"><span>DG shoppers</span></div>
+          <div class="tg-chip"><img src="images/cvs.svg" alt="CVS"><span>CVS shoppers</span></div>
+        </div>
+        <div class="pbody"><div class="pnum">1</div><h4>Target</h4><p>Mobility data indexes venues to your retailer's shoppers.</p></div>
+      </div>
+      <div class="pstep">
+        <div class="pvis"><img src="images/03.jpg" alt="Community members handed product at a fitness studio"></div>
+        <div class="pbody"><div class="pnum">2</div><h4>Distribute</h4><p>Trusted community leaders hand over product, with on-site signage.</p></div>
+      </div>
+      <div class="pstep">
+        <div class="pvis"><img src="videos/poster-3.jpg" alt="Studio member sharing the product on social"></div>
+        <div class="pbody"><div class="pnum">3</div><h4>Promote</h4><p>The venue promotes to its community via owned email and social.</p></div>
+      </div>
+      <div class="pstep">
+        <div class="pvis"><img src="images/18.jpg" alt="Top post boosted to retailer commerce audiences"><span class="avail">Available at Walmart</span></div>
+        <div class="pbody"><div class="pnum">4</div><h4>Amplify</h4><p>Recess whitelist-boosts the top posts to retailer commerce audiences.</p></div>
+      </div>
+      <div class="pstep">
+        <div class="pvis g-fill">
+          <div class="md-stat"><b>$1.83</b><span>iROAS</span></div>
+          <div class="md-stat"><b>$2.9M</b><span>Incremental sales</span></div>
+          <div class="md-stat"><b>4.98%</b><span>Incremental lift</span></div>
+          <div class="md-bars"><i style="height:38%"></i><i style="height:62%"></i><i style="height:50%"></i><i style="height:78%"></i><i style="height:66%"></i><i style="height:90%"></i><i style="height:72%"></i></div>
+        </div>
+        <div class="pbody"><div class="pnum">5</div><h4>Measure</h4><p>Closed-loop store-level sales lift and iROAS.</p></div>
+      </div>
     </div>
   </div>
 </section>
