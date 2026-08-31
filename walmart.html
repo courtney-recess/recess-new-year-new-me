@@ -255,7 +255,7 @@
       <span class="badge"><svg class="ico"><use href="#i-bolt"></use></svg> Recess &times; Walmart Connect</span>
       <h1>Bring your brands a New Year moment that drives <span class="grad">Walmart trips</span>.</h1>
       <p class="rigor">Measured. Attributed. Repeatable.</p>
-      <p class="sub">New Year, New Me is a category-exclusive partnership you can bring to the brand and shopper teams you work with. It puts their products in gym-goers' hands near Walmart stores, a full media program (sampling, email, social, amplified media) that drives measurable Walmart trips: a revenue-share co-sell for Walmart Connect and Recess.</p>
+      <p class="sub">New Year, New Me is a category-exclusive partnership you can bring to the brand and shopper teams you work with. It puts their products in shoppers' hands near Walmart stores, a full media program (sampling, email, social, amplified media) that drives measurable Walmart trips: a revenue-share co-sell for Walmart Connect and Recess.</p>
       <div class="cta-row">
         <a href="#program" class="btn-primary">Win the New Year</a>
       </div>
@@ -320,7 +320,7 @@
         <span class="season-tag"><svg class="ico"><use href="#i-bolt"></use></svg> The partnership</span>
         <h2>A partnership with the gyms &amp; studios where the <span class="accent">new year happens</span>.</h2>
         <div class="when-line">Running the first weeks of January</div>
-        <p class="desc">A category-exclusive New Year program to bring to your brands: a national network of gyms and boutique fitness studios near Walmart locations, where committed members rebuild the new year's routine. Every program spans four connected media products:</p>
+        <p class="desc">A category-exclusive New Year program to bring to your brands: a national network of fitness studios, university housing, and apartments & condos near Walmart locations, where committed members rebuild the new year's routine. Every program spans four connected media products:</p>
         <ul class="feat">
           <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Category-exclusive</b>: one brand per category, per moment. Claim it and your competitors are locked out.</span></li>
           <li><span class="tick"><svg class="ico"><use href="#i-check"></use></svg></span><span><b>Product sampling</b>: your product handed over by the studio's own instructors, a recommendation from someone members already trust, not an interruption.</span></li>
@@ -445,7 +445,7 @@
 </section>
 
 <style>
-  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;text-align:left}
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;text-align:left}
   .tier{position:relative;background:var(--color-navy-light);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:28px 24px}
   .tprice{font-size:34px;font-weight:900;color:#fff;letter-spacing:-.02em}
   .ttrials{margin-top:10px} .ttrials b{font-size:24px;font-weight:800;color:#0071DC}
@@ -453,7 +453,12 @@
   .tmeta{list-style:none;margin-top:18px;display:grid;gap:9px}
   .tmeta li{font-size:14px;color:var(--text-white-60);padding-left:18px;position:relative}
   .tmeta li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#0071DC}
-  .tincl{max-width:840px;margin:28px auto 0}
+  .pkgtabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+  .pkgtab{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:var(--text-white-60);font-family:inherit;font-size:14px;font-weight:600;padding:10px 18px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+  .pkgtab.active{background:#0071DC;border-color:#0071DC;color:#ffffff}
+  .pkgpanel{display:none} .pkgpanel.active{display:block}
+  .pkgaud{font-size:12px;color:#0071DC;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-top:26px}
+  .tincl{max-width:840px;margin:30px auto 0}
   .tincl-lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-white-55);font-weight:700}
   .tchips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:12px}
   .tchips span{font-size:12.5px;color:var(--text-white-85);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:6px 13px}
@@ -465,9 +470,9 @@
 <section class="band center">
   <div class="wrap">
     <p class="section__label">Investment</p>
-    <h2 class="lead">Own the January Reset. Pick your tier.</h2>
-    <p class="muted" style="max-width:64ch;margin:14px auto 0">Each tier is an independent, standalone program at fitness studios. Pricing based on a 2 oz shelf-stable sample.</p>
-    <div class="tiers"><div class="tier"><div class="tprice">$150K</div><div class="ttrials"><b>54,172</b><span>product trials</span></div><ul class="tmeta"><li>74 fitness venues</li><li>3.75M social impressions</li><li>1 creator</li></ul></div><div class="tier"><div class="tprice">$250K</div><div class="ttrials"><b>95,043</b><span>product trials</span></div><ul class="tmeta"><li>136 fitness venues</li><li>6M social impressions</li><li>2 creators</li></ul></div><div class="tier"><div class="tprice">$500K</div><div class="ttrials"><b>227,377</b><span>product trials</span></div><ul class="tmeta"><li>243 fitness venues</li><li>13.5M social impressions</li><li>2 creators</li></ul></div></div>
+    <h2 class="lead">Own the January Reset. Pick your venue and tier.</h2>
+    <p class="muted" style="max-width:64ch;margin:14px auto 0">Each tier is an independent, standalone program. Pricing based on a 2 oz shelf-stable sample.</p>
+    <div class="pkgtabs"><button class="pkgtab active" data-v="0">Fitness Studios</button><button class="pkgtab" data-v="1">University Housing</button><button class="pkgtab" data-v="2">Apartments & Condos</button></div><div class="pkgpanels"><div class="pkgpanel active" data-v="0"><p class="pkgaud">Resolutioners & gym-goers</p><div class="tiers"><div class="tier"><div class="tprice">$150K</div><div class="ttrials"><b>54,172</b><span>product trials</span></div><ul class="tmeta"><li>74 venues</li><li>3.75M social impressions</li><li>1 creator</li></ul></div><div class="tier"><div class="tprice">$250K</div><div class="ttrials"><b>95,043</b><span>product trials</span></div><ul class="tmeta"><li>136 venues</li><li>6M social impressions</li><li>2 creators</li></ul></div><div class="tier"><div class="tprice">$500K</div><div class="ttrials"><b>227,377</b><span>product trials</span></div><ul class="tmeta"><li>243 venues</li><li>13.5M social impressions</li><li>2 creators</li></ul></div></div></div><div class="pkgpanel" data-v="1"><p class="pkgaud">College students (Gen Z)</p><div class="tiers"><div class="tier"><div class="tprice">$150K</div><div class="ttrials"><b>61,805</b><span>product trials</span></div><ul class="tmeta"><li>132 venues</li><li>3.75M social impressions</li><li>1 creator</li></ul></div><div class="tier"><div class="tprice">$250K</div><div class="ttrials"><b>99,868</b><span>product trials</span></div><ul class="tmeta"><li>221 venues</li><li>6M social impressions</li><li>2 creators</li></ul></div><div class="tier"><div class="tprice">$500K</div><div class="ttrials"><b>225,534</b><span>product trials</span></div><ul class="tmeta"><li>470 venues</li><li>13.5M social impressions</li><li>2 creators</li></ul></div></div></div><div class="pkgpanel" data-v="2"><p class="pkgaud">Residents & young families</p><div class="tiers"><div class="tier"><div class="tprice">$150K</div><div class="ttrials"><b>64,048</b><span>product trials</span></div><ul class="tmeta"><li>143 venues</li><li>3.75M social impressions</li><li>1 creator</li></ul></div><div class="tier"><div class="tprice">$250K</div><div class="ttrials"><b>104,040</b><span>product trials</span></div><ul class="tmeta"><li>268 venues</li><li>6M social impressions</li><li>2 creators</li></ul></div><div class="tier"><div class="tprice">$500K</div><div class="ttrials"><b>237,449</b><span>product trials</span></div><ul class="tmeta"><li>392 venues</li><li>13.5M social impressions</li><li>2 creators</li></ul></div></div></div></div><script>document.querySelectorAll(".pkgtab").forEach(function(b){b.addEventListener("click",function(){document.querySelectorAll(".pkgtab,.pkgpanel").forEach(function(e){e.classList.remove("active")});b.classList.add("active");document.querySelector('.pkgpanel[data-v="'+b.dataset.v+'"]').classList.add("active")})})</script>
     <div class="tincl"><span class="tincl-lbl">Included in every tier</span><div class="tchips"><span>Category exclusivity</span><span>On-site signage (printed & shipped)</span><span>Social & email amplification</span><span>Consumer Insights Lift Study</span><span>Incremental Sales Lift Study (Nielsen iROAS)</span><span>Walmart-vetted influencer content</span></div></div>
     <p class="tkpi">KPIs: New-to-Brand · Purchase-Intent Lift · iROAS</p>
   </div>
@@ -517,8 +522,8 @@
   <div class="wrap">
     <p class="section__label">The process</p>
     <h2 class="lead">How it works</h2>
-    <p class="muted" style="max-width:62ch;margin:16px auto 0">One turnkey playbook, from discovery to measured sales, every moment.</p>
-    <div class="proc"><div class="pstep"><div class="pvis g-fill"><div class="tg-lbl">Mobility index</div><div class="tg-chip"><img src="images/walmart.svg" alt="Walmart"><span>Walmart shoppers</span></div></div><div class="pbody"><div class="pnum">1</div><h4>Discovery</h4><p>Co-branded signage at mobility-indexed venues that over-index on Walmart shoppers, so the brand stands out and draws the crowd.</p></div></div><div class="pstep"><div class="pvis"><img src="images/03.jpg" alt="Trial"></div><div class="pbody"><div class="pnum">2</div><h4>Trial</h4><p>Turnkey, community-led sampling: trusted studio instructors hand Walmart shoppers the product at the moment of peak need.</p></div></div><div class="pstep"><div class="pvis"><img src="images/18.jpg" alt="Convert"><span class="avail">Available at Walmart</span></div><div class="pbody"><div class="pnum">3</div><h4>Convert</h4><p>Organizer signage, social, and email amplify each activation, then paid media boosts the top posts to Walmart commerce audiences, driving one CTA to purchase.</p></div></div><div class="pstep"><div class="pvis g-fill"><div class="md-stat"><b>$1.83</b><span>iROAS</span></div><div class="md-stat"><b>$2.9M</b><span>Incremental sales</span></div><div class="md-stat"><b>4.98%</b><span>Incremental lift</span></div><div class="md-bars"><i style="height:38%"></i><i style="height:62%"></i><i style="height:50%"></i><i style="height:78%"></i><i style="height:66%"></i><i style="height:90%"></i><i style="height:72%"></i></div></div><div class="pbody"><div class="pnum">4</div><h4>Measure</h4><p>A Consumer Insights or Incremental Sales Lift study (Nielsen iROAS), plus first-party data, ties every program to measurable results.</p></div></div></div>
+    <p class="muted" style="max-width:62ch;margin:16px auto 0">One turnkey playbook, from discovery to measured sales.</p>
+    <div class="proc"><div class="pstep"><div class="pvis g-fill"><div class="tg-lbl">Mobility index</div><div class="tg-chip"><img src="images/walmart.svg" alt="Walmart"><span>Walmart shoppers</span></div><div class="tg-chip" style="opacity:.6"><span>Over-indexed venues</span></div><div class="tg-chip" style="opacity:.6"><span>Near-store proximity</span></div></div><div class="pbody"><div class="pnum">1</div><h4>Discovery</h4><p>Co-branded signage at mobility-indexed venues that over-index on Walmart shoppers.</p></div></div><div class="pstep"><div class="pvis"><img src="images/03.jpg" alt="Trial"></div><div class="pbody"><div class="pnum">2</div><h4>Trial</h4><p>Trusted community leaders hand shoppers the product at the moment of peak need.</p></div></div><div class="pstep"><div class="pvis"><img src="images/18.jpg" alt="Convert"><span class="avail">Available at Walmart</span></div><div class="pbody"><div class="pnum">3</div><h4>Convert</h4><p>Signage, social, and email amplify each activation; paid media drives one CTA to purchase.</p></div></div><div class="pstep"><div class="pvis g-fill"><div class="md-stat"><b>$1.83</b><span>iROAS</span></div><div class="md-stat"><b>$2.9M</b><span>Incremental sales</span></div><div class="md-stat"><b>4.98%</b><span>Incremental lift</span></div><div class="md-bars"><i style="height:38%"></i><i style="height:62%"></i><i style="height:50%"></i><i style="height:78%"></i><i style="height:66%"></i><i style="height:90%"></i><i style="height:72%"></i></div></div><div class="pbody"><div class="pnum">4</div><h4>Measure</h4><p>A Consumer Insights or Incremental Sales Lift study (Nielsen iROAS) ties it to results.</p></div></div></div>
   </div>
 </section>
 
