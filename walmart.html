@@ -209,8 +209,12 @@
 
   .cobrand{gap:12px}
   .cobrand .rlogo{height:24px;width:auto}
-  .cobrand .xsym{color:var(--text-white-25);font-size:18px;font-weight:400}
-  .cobrand .plogo{height:30px;width:auto;background:#fff;padding:5px 9px;border-radius:7px;display:block}
+  .cobrand .xsym{color:rgba(0,0,0,.3);font-size:18px;font-weight:400}
+  .cobrand .plogo{height:26px;width:auto;display:block}
+  /* co-branded retailer nav: full-width white bar */
+  header.nav{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none;border-bottom:1px solid rgba(0,0,0,.08)}
+  header.nav .nav-links a:not(.nav-cta){color:#5F6E81}
+  header.nav .nav-links a:not(.nav-cta):hover{color:#0a0f1a}
   .ways .cards.cosell{grid-template-columns:repeat(3,1fr)}
   @media(max-width:900px){.ways .cards.cosell{grid-template-columns:1fr}}
 </style>
