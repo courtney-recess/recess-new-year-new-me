@@ -9,10 +9,10 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
   :root{
-    --color-aqua:#FFC220; --color-sea-green:#E0A800; --color-forest:#FFC220; --color-orange:#ff8900;
+    --color-aqua:#FEF408; --color-sea-green:#D9CF00; --color-forest:#FEF408; --color-orange:#ff8900;
     --color-navy:#0a0f1a; --color-navy-light:#0d1525; --color-navy-deep:#060b15; --color-navy-muted:#111827;
     --color-grey-200:#DBE1E8; --color-grey-500:#5F6E81;
-    --color-primary:var(--color-aqua); --color-primary-hover:var(--color-sea-green); --color-accent-green:#FFC220;
+    --color-primary:var(--color-aqua); --color-primary-hover:var(--color-sea-green); --color-accent-green:#FEF408;
     --text-white:rgba(255,255,255,1); --text-white-85:rgba(255,255,255,.85); --text-white-60:rgba(255,255,255,.60);
     --text-white-55:rgba(255,255,255,.55); --text-white-25:rgba(255,255,255,.25);
     --font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -28,7 +28,7 @@
     --max-width-content:1160px;
     --radius-card:16px; --radius-button:10px; --radius-badge:8px; --radius-pill:100px;
     --border-subtle:1px solid rgba(255,255,255,.06); --border-light:1px solid rgba(255,255,255,.10);
-    --shadow-cta-glow:0 0 24px rgba(255,194,32,.25); --shadow-cta-glow-hover:0 0 32px rgba(255,194,32,.40);
+    --shadow-cta-glow:0 0 24px rgba(254,244,8,.25); --shadow-cta-glow-hover:0 0 32px rgba(254,244,8,.40);
     --shadow-card:0 4px 24px rgba(0,0,0,.08);
     --transition-fast:.2s ease; --transition-base:.3s ease; --transition-button:200ms ease;
     --hover-lift:translateY(-3px);
@@ -56,7 +56,7 @@
   .btn-ghost:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.05);transform:var(--hover-lift)}
   .badge{display:inline-flex;align-items:center;gap:.4em;padding:6px 14px;font-size:var(--font-size-caption);
     font-weight:var(--fw-semibold);letter-spacing:var(--ls-wide);text-transform:uppercase;border-radius:var(--radius-badge);
-    background:rgba(255,194,32,.10);color:var(--color-aqua);border:1px solid rgba(255,194,32,.20)}
+    background:rgba(254,244,8,.10);color:var(--color-aqua);border:1px solid rgba(254,244,8,.20)}
   .card{background:var(--color-navy-light);border:var(--border-subtle);border-radius:var(--radius-card);
     padding:var(--spacing-card-padding);transition:border-color var(--transition-base),transform var(--transition-base),box-shadow var(--transition-base)}
   .card:hover{border-color:rgba(255,255,255,.12);transform:var(--hover-lift);box-shadow:var(--shadow-card)}
@@ -84,8 +84,8 @@
   /* HERO — split text | image */
   .hero{position:relative;overflow:hidden;padding:40px 0 52px}
   .hero-glow{position:absolute;inset:0;z-index:0;pointer-events:none;background:
-    radial-gradient(50% 60% at 12% 6%,rgba(255,194,32,.16),transparent 60%),
-    radial-gradient(55% 60% at 92% 30%,rgba(255,194,32,.20),transparent 60%)}
+    radial-gradient(50% 60% at 12% 6%,rgba(254,244,8,.16),transparent 60%),
+    radial-gradient(55% 60% at 92% 30%,rgba(254,244,8,.20),transparent 60%)}
   .hero-split{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
   .hero-copy h1{font-size:clamp(2rem,3.2vw + .55rem,3.1rem);font-weight:var(--fw-extrabold);max-width:15ch;text-wrap:balance}
   .hero-copy h1 .grad{background:linear-gradient(120deg,var(--color-aqua),var(--color-forest));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -95,12 +95,12 @@
   .hero-copy .badge{margin-bottom:18px}
   .hero-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:9/16;height:min(74vh,620px);width:auto;justify-self:center;margin:0 auto;box-shadow:0 30px 80px rgba(0,0,0,.55)}
   .hero-photo img,.hero-photo video{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
-  .hero-photo .fg{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,194,32,.25),inset 0 -70px 110px rgba(6,11,21,.45)}
+  .hero-photo .fg{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(254,244,8,.25),inset 0 -70px 110px rgba(6,11,21,.45)}
   .hero-photo .tag{position:absolute;left:16px;bottom:16px;z-index:2;font-size:12px;font-weight:var(--fw-semibold);letter-spacing:.03em;padding:6px 12px;border-radius:var(--radius-pill);background:rgba(0,0,0,.55);backdrop-filter:blur(6px);color:#fff}
   @media(max-width:880px){.hero-split{grid-template-columns:1fr;gap:30px}.hero-photo{aspect-ratio:9/16;height:auto;max-height:60vh;width:auto;max-width:300px;margin:0 auto}.hero-copy{text-align:center}.hero-copy h1,.hero-copy p.sub{margin-left:auto;margin-right:auto}.hero-copy .cta-row{justify-content:center}}
 
   /* category exclusive */
-  .excl{background:linear-gradient(180deg,rgba(255,194,32,.07),transparent 90%);border-top:var(--border-light);border-bottom:var(--border-light);padding:48px 0}
+  .excl{background:linear-gradient(180deg,rgba(254,244,8,.07),transparent 90%);border-top:var(--border-light);border-bottom:var(--border-light);padding:48px 0}
   .excl .wrap{display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:left}
   .excl .lock{font-size:28px;color:var(--color-aqua)}
   .excl .txt{max-width:640px}
@@ -121,22 +121,22 @@
   @media(max-width:760px){.stat-row{grid-template-columns:1fr}}
 
   /* program */
-  .program{padding:100px 0;background:radial-gradient(120% 90% at 100% 0%,rgba(255,194,32,.10),transparent 55%),radial-gradient(100% 80% at 0% 100%,rgba(255,194,32,.08),transparent 55%)}
+  .program{padding:100px 0;background:radial-gradient(120% 90% at 100% 0%,rgba(254,244,8,.10),transparent 55%),radial-gradient(100% 80% at 0% 100%,rgba(254,244,8,.08),transparent 55%)}
   .program .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
   @media(max-width:900px){.program .grid{grid-template-columns:1fr;gap:40px}}
-  .season-tag{display:inline-flex;align-items:center;gap:.5em;font-weight:var(--fw-semibold);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:var(--radius-pill);background:rgba(255,194,32,.13);color:var(--color-forest);border:1px solid rgba(255,194,32,.3)}
+  .season-tag{display:inline-flex;align-items:center;gap:.5em;font-weight:var(--fw-semibold);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:var(--radius-pill);background:rgba(254,244,8,.13);color:var(--color-forest);border:1px solid rgba(254,244,8,.3)}
   .program h2{font-size:clamp(28px,4.2vw,46px);font-weight:var(--fw-extrabold);margin:20px 0 0}
   .program h2 .accent{color:var(--color-forest)}
   .program .when-line{font-weight:var(--fw-semibold);font-size:14px;margin-top:14px;color:var(--color-forest)}
   .program .desc{color:var(--text-white-60);margin-top:18px;font-size:var(--font-size-body);max-width:52ch;line-height:var(--lh-relaxed)}
   .feat{list-style:none;margin:28px 0 0;display:grid;gap:14px}
   .feat li{display:flex;gap:14px;align-items:flex-start;font-size:var(--font-size-body);color:var(--text-white-85)}
-  .feat li .tick{flex:0 0 auto;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:var(--fw-bold);margin-top:2px;background:rgba(255,194,32,.16);color:var(--color-forest)}
+  .feat li .tick{flex:0 0 auto;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:var(--fw-bold);margin-top:2px;background:rgba(254,244,8,.16);color:var(--color-forest)}
   .feat li b{color:var(--text-white);font-weight:var(--fw-semibold)}
   .visual{position:relative}
   .photo-main{position:relative;border-radius:var(--radius-card);overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 80px rgba(0,0,0,.55)}
   .photo-main img{width:100%;height:100%;object-fit:cover}
-  .photo-main .fg{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,194,32,.25),inset 0 -80px 120px rgba(6,11,21,.5)}
+  .photo-main .fg{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(254,244,8,.25),inset 0 -80px 120px rgba(6,11,21,.5)}
   .photo-mini{position:absolute;width:44%;aspect-ratio:1/1;border-radius:14px;overflow:hidden;border:5px solid var(--color-navy);box-shadow:0 20px 50px rgba(0,0,0,.5);right:-18px;bottom:-26px}
   .photo-mini img{width:100%;height:100%;object-fit:cover}
   @media(max-width:900px){.photo-mini{width:40%}}
@@ -187,7 +187,7 @@
 
   /* final cta */
   .final{position:relative;text-align:center;padding:118px 0;overflow:hidden;border-top:var(--border-light)}
-  .final-glow{position:absolute;inset:0;background:radial-gradient(50% 60% at 20% 0%,rgba(255,194,32,.20),transparent 60%),radial-gradient(50% 60% at 80% 10%,rgba(255,194,32,.18),transparent 60%)}
+  .final-glow{position:absolute;inset:0;background:radial-gradient(50% 60% at 20% 0%,rgba(254,244,8,.20),transparent 60%),radial-gradient(50% 60% at 80% 10%,rgba(254,244,8,.18),transparent 60%)}
   .final .wrap{position:relative;z-index:2}
   .final h2{font-size:clamp(24px,3.6vw,40px);font-weight:var(--fw-bold);line-height:var(--lh-snug);max-width:20ch;margin:0 auto 16px}
   .final p{font-size:var(--font-size-body);color:var(--text-white-55);max-width:60ch;margin:0 auto 28px;line-height:var(--lh-relaxed)}
@@ -274,7 +274,7 @@
 <!-- RETAILER POSITIONING -->
 <section class="band posband center">
   <div class="wrap">
-    <div class="poscard" style="border:1px solid rgba(255,194,32,.32);background:rgba(255,194,32,.06);border-radius:16px;padding:34px 28px;max-width:900px;margin:0 auto">
+    <div class="poscard" style="border:1px solid rgba(254,244,8,.32);background:rgba(254,244,8,.06);border-radius:16px;padding:34px 28px;max-width:900px;margin:0 auto">
       <p class="section__label">The Dollar General opportunity</p>
       <h2 class="lead">Reach the Dollar General shopper in their own community.</h2>
       <p class="muted" style="max-width:66ch;margin:14px auto 0">The DG shopper skews value-driven and often rural, hard to reach efficiently through national media. Recess uses mobility data and Dollar General shopper insights to find the community venues where DG customers actually spend their time, delivers the product through someone they trust, and measures every trial to Dollar General store-level sales. New Year is when that shopper resets too, and reaches for better-for-you within reach.</p>
@@ -452,21 +452,21 @@
   .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;text-align:left}
   .tier{position:relative;background:var(--color-navy-light);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:28px 24px}
   .tprice{font-size:34px;font-weight:900;color:#fff;letter-spacing:-.02em}
-  .ttrials{margin-top:10px} .ttrials b{font-size:24px;font-weight:800;color:#FFC220}
+  .ttrials{margin-top:10px} .ttrials b{font-size:24px;font-weight:800;color:#FEF408}
   .ttrials span{display:block;font-size:12px;color:var(--text-white-55);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
   .tmeta{list-style:none;margin-top:18px;display:grid;gap:9px}
   .tmeta li{font-size:14px;color:var(--text-white-60);padding-left:18px;position:relative}
-  .tmeta li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#FFC220}
+  .tmeta li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#FEF408}
   .pkgtabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:34px}
   .pkgtab{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:var(--text-white-60);font-family:inherit;font-size:14px;font-weight:600;padding:10px 18px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
-  .pkgtab.active{background:#FFC220;border-color:#FFC220;color:#0a0f1a}
+  .pkgtab.active{background:#FEF408;border-color:#FEF408;color:#0a0f1a}
   .pkgpanel{display:none} .pkgpanel.active{display:block}
-  .pkgaud{font-size:12px;color:#FFC220;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-top:26px}
+  .pkgaud{font-size:12px;color:#FEF408;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-top:26px}
   .tincl{max-width:840px;margin:30px auto 0}
   .tincl-lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-white-55);font-weight:700}
   .tchips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:12px}
   .tchips span{font-size:12.5px;color:var(--text-white-85);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:6px 13px}
-  .tkpi{margin-top:20px;font-size:13px;color:#FFC220;font-weight:700;letter-spacing:.02em}
+  .tkpi{margin-top:20px;font-size:13px;color:#FEF408;font-weight:700;letter-spacing:.02em}
   @media(max-width:820px){.tiers{grid-template-columns:1fr}}
 </style>
 <!-- PACKAGES -->
@@ -490,9 +490,9 @@
     <h2 class="lead">Bring it to your book. We'll help you close.</h2>
     <p class="muted" style="max-width:64ch;margin:16px auto 0">A category-exclusive New Year moment you can take to the brand and shopper teams you already own, with Recess handling the activation and the measurement.</p>
     <div class="cards cosell">
-      <div class="card waycard"><div class="rail" style="background:#FFC220"></div><span class="chip">Your accounts</span><h3>Take it to your shopper teams</h3><p>Bring a category-exclusive New Year program to the brands and shopper teams you already own. We give your team everything to pitch it.</p></div>
-      <div class="card waycard"><div class="rail" style="background:#FFC220"></div><span class="chip">Back to store</span><h3>Drive Dollar General trips</h3><p>Sampling at gyms and studios near Dollar General stores drives measurable trips and sales back to the shelf.</p></div>
-      <div class="card waycard"><div class="rail" style="background:#FFC220"></div><span class="chip">JBP credit</span><h3>Counts as their Dollar General spend</h3><p>Route it through Dollar General Media Network and the spend counts as the brand's Dollar General investment: a revenue-share co-sell for Dollar General Media Network and Recess.</p></div>
+      <div class="card waycard"><div class="rail" style="background:#FEF408"></div><span class="chip">Your accounts</span><h3>Take it to your shopper teams</h3><p>Bring a category-exclusive New Year program to the brands and shopper teams you already own. We give your team everything to pitch it.</p></div>
+      <div class="card waycard"><div class="rail" style="background:#FEF408"></div><span class="chip">Back to store</span><h3>Drive Dollar General trips</h3><p>Sampling at gyms and studios near Dollar General stores drives measurable trips and sales back to the shelf.</p></div>
+      <div class="card waycard"><div class="rail" style="background:#FEF408"></div><span class="chip">JBP credit</span><h3>Counts as their Dollar General spend</h3><p>Route it through Dollar General Media Network and the spend counts as the brand's Dollar General investment: a revenue-share co-sell for Dollar General Media Network and Recess.</p></div>
     </div>
   </div>
 </section>
@@ -503,7 +503,7 @@
   .pstep{background:var(--color-navy-light);border:var(--border-subtle);border-radius:var(--radius-card);overflow:hidden;display:flex;flex-direction:column}
   .pvis{position:relative;aspect-ratio:auto;height:220px;overflow:hidden;background:#0d1525;border-bottom:var(--border-subtle)}
   .pvis>img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-  .pvis .avail{position:absolute;top:10px;right:10px;background:#FFC220;color:#0a0f1a;font-size:10.5px;font-weight:700;padding:5px 9px;border-radius:7px;box-shadow:0 4px 12px rgba(0,0,0,.45)}
+  .pvis .avail{position:absolute;top:10px;right:10px;background:#FEF408;color:#0a0f1a;font-size:10.5px;font-weight:700;padding:5px 9px;border-radius:7px;box-shadow:0 4px 12px rgba(0,0,0,.45)}
   .pbody{padding:18px 18px 22px}
   .pnum{width:34px;height:34px;border-radius:9px;background:var(--color-aqua);color:#0a0f1a;display:grid;place-items:center;font-weight:800;font-size:16px;margin-bottom:12px}
   .pstep h4{font-size:19px;font-weight:800;margin-bottom:8px}
